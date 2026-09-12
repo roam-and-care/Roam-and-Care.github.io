@@ -17,7 +17,7 @@ Book now
     💬 WhatsApp
   </a>
 
-  <a href="[https://www.rover.com/members/your-profile/](https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/?service_type=overnight-boarding&frequency=onetime&pet_type=dog&location_type=geoip&dog_count=0&cat_count=0&puppy_count=0)" class="btn" target="_blank">
+  <a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">
     🐕 Rover
   </a>
 </div>
