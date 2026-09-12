@@ -37,3 +37,30 @@ header {
   padding: 1rem 1.5rem;
   border-radius: 8px;
 }
+
+/* Video + text side by side */
+.video-text-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;  /* Vertically centers the text with the video */
+  margin: 2rem 0;
+}
+
+.video-col {
+  flex: 1;  /* Video takes 1/2 of the space */
+}
+
+.text-col {
+  flex: 1;  /* Text takes 1/2 of the space */
+}
+
+/* Mobile: stack the video above the text */
+@media (max-width: 700px) {
+  .video-text-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .video-col, .text-col {
+    width: 100%;
+  }
+}
