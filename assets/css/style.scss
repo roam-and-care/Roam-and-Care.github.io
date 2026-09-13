@@ -28,6 +28,8 @@ a:hover {
 
 /* Add a bit more padding to the main container */
 .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem 2.5rem;
 }
 
@@ -41,8 +43,8 @@ header {
 /* Video + text side by side */
 .video-text-row {
   display: flex;
-  gap: 2rem;
-  align-items: center;  /* Vertically centers the text with the video */
+  gap: 1rem;
+  align-items: center;
   margin: 2rem 0;
 }
 
