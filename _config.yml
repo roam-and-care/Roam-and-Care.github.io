@@ -1,22 +1,24 @@
-title: Roam and Care
-description: We roam, so you can work, relax, or handle the unexpected. Your home, animals, land – always cared for.
+title: "Roam & Care"
+description: "We roam, so you can work, relax, or handle the unexpected."
 theme: jekyll-theme-minimal
+
 plugins:
   - jekyll-polyglot
-  - jekyll-sitemap
   - jekyll-seo-tag
-  defaults:
-  - scope:
-      path: ""
-    values:
-     image: /assets/images/your-social-image.jpg   # Optional: a nice image for social sharing
+  - jekyll-sitemap
+
+languages: ["en", "fr", "es", "pt", "it"]
+default_lang: "en"
+parallel_localization: true
+url: "https://roam-and-care.github.io"
+
+exclude_from_localization:
+  - javascript
+  - images
+  - css
+  - public
+  - sitemap
+  - CNAME
 
 sass:
   sass_dir: _sass
-
-# Polyglot settings
-languages: ["en", "fr", "es", "pt", "it"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "CNAME"]
-parallel_localization: true
-url: "https://roam-and-care.github.io"
