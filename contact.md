@@ -5,7 +5,7 @@ description: Contact us
 permalink: /contact/
 ---
 
-Book now
+### Book now
 
 <div class="button-group">
 
