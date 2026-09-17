@@ -19,4 +19,54 @@ title: Roam and Care
 Book with ROAM & CARE for professional nomadic caretakers. You share your world, we care for it..</p>
   </div>
 
-<img src="{{ '/assets/images/tomfyndbalcony.jpg' | relative_url }}" alt="Tom and Fynd on the balcony">
+<div class="image-grid">
+
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Annika.jpg' | relative_url }}" alt="Annika">
+  </div>
+
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Carma.jpg' | relative_url }}" alt="Carma">
+  </div>
+
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Carrie.jpg' | relative_url }}" alt="Carrie">
+  </div>
+
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Christin.jpg' | relative_url }}" alt="Christin">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Daniel.jpg' | relative_url }}" alt="Daniel">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Engla.jpg' | relative_url }}" alt="Engla">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Filippa.jpg' | relative_url }}" alt="Filippa">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Filippa2.jpg' | relative_url }}" alt="Filippa2">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/France.jpg' | relative_url }}" alt="France">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Geoffroy.jpg' | relative_url }}" alt="Geoffroy">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/JD.jpg' | relative_url }}" alt="JD">
+  </div>
+  
+  <div class="grid-item">
+    <img src="{{ '/assets/images/Leonie.jpg' | relative_url }}" alt="Leonie">
+  </div>
+
+</div>
