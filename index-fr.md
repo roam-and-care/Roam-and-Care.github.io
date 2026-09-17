@@ -6,6 +6,7 @@ lang: fr
 permalink: /
 --- 
 
+
 ## Maison ♢ Compagnons ♢ Ferme ♢ Sabots
 
 ### Nous voyageons pour vous, afin que vous puissiez travailler, vous détendre ou faire face à l'imprévu. Votre maison, vos animaux, votre terrain – toujours pris en charge.
