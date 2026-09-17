@@ -19,5 +19,4 @@ title: Roam and Care
 Book with ROAM & CARE for professional nomadic caretakers. You share your world, we care for it..</p>
   </div>
 
-
 ![Thomas and Fynd on the balcony](/assets/images/tomfyndbalcony.jpg)
