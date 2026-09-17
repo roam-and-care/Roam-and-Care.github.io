@@ -11,6 +11,9 @@ plugins:
     values:
       image: /assets/images/your-social-image.jpg   # Optional: a nice image for social sharing
 
+sass:
+  sass_dir: _sass
+
 # Polyglot settings
 languages: ["en", "fr", "es", "pt", "it"]
 default_lang: "en"
