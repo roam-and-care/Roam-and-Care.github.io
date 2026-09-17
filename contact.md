@@ -4,7 +4,7 @@ title: Contact
 description: Contact us
 permalink: /contact/
 ---
-![Collage](/assets/images/roamandcarecollage.jpg)
+
 Book now
 
 <div class="button-group">
@@ -21,3 +21,5 @@ Book now
     🐕 Rover
   </a>
 </div>
+
+![Collage](/assets/images/roamandcarecollage.jpg)
