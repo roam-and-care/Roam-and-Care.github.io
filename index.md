@@ -22,51 +22,51 @@ Book with ROAM & CARE for professional nomadic caretakers. You share your world,
 <div class="image-grid">
 
   <div class="grid-item">
-    <img src="{{ '/assets/images/Annika.jpg' | relative_url }}" alt="Annika">
+    <img src="{{ '/assets/images/Annika.png' | relative_url }}" alt="Annika">
   </div>
 
   <div class="grid-item">
-    <img src="{{ '/assets/images/Carma.jpg' | relative_url }}" alt="Carma">
+    <img src="{{ '/assets/images/Carma.png' | relative_url }}" alt="Carma">
   </div>
 
   <div class="grid-item">
-    <img src="{{ '/assets/images/Carrie.jpg' | relative_url }}" alt="Carrie">
+    <img src="{{ '/assets/images/Carrie.png' | relative_url }}" alt="Carrie">
   </div>
 
   <div class="grid-item">
-    <img src="{{ '/assets/images/Christin.jpg' | relative_url }}" alt="Christin">
+    <img src="{{ '/assets/images/Christin.png' | relative_url }}" alt="Christin">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Daniel.jpg' | relative_url }}" alt="Daniel">
+    <img src="{{ '/assets/images/Daniel.png' | relative_url }}" alt="Daniel">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Engla.jpg' | relative_url }}" alt="Engla">
+    <img src="{{ '/assets/images/Engla.png' | relative_url }}" alt="Engla">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Filippa.jpg' | relative_url }}" alt="Filippa">
+    <img src="{{ '/assets/images/Filippa.png' | relative_url }}" alt="Filippa">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Filippa2.jpg' | relative_url }}" alt="Filippa2">
+    <img src="{{ '/assets/images/Filippa2.png' | relative_url }}" alt="Filippa2">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/France.jpg' | relative_url }}" alt="France">
+    <img src="{{ '/assets/images/France.png' | relative_url }}" alt="France">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Geoffroy.jpg' | relative_url }}" alt="Geoffroy">
+    <img src="{{ '/assets/images/Geoffroy.png' | relative_url }}" alt="Geoffroy">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/JD.jpg' | relative_url }}" alt="JD">
+    <img src="{{ '/assets/images/JD.png' | relative_url }}" alt="JD">
   </div>
   
   <div class="grid-item">
-    <img src="{{ '/assets/images/Leonie.jpg' | relative_url }}" alt="Leonie">
+    <img src="{{ '/assets/images/Leonie.png' | relative_url }}" alt="Leonie">
   </div>
 
 </div>
