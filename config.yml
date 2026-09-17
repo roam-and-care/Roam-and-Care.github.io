@@ -9,7 +9,7 @@ plugins:
   - scope:
       path: ""
     values:
-      image: /assets/images/your-social-image.jpg   # Optional: a nice image for social sharing
+     image: /assets/images/your-social-image.jpg   # Optional: a nice image for social sharing
 
 sass:
   sass_dir: _sass
