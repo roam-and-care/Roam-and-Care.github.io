@@ -182,3 +182,13 @@ section p {
     grid-template-columns: 1fr;
   }
 }
+
+header h1 {
+  margin: 0 !important;
+  line-height: 1.2;
+}
+
+header nav a {
+  line-height: 1.2;
+  display: inline-block;
+}
