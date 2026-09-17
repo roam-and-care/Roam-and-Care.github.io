@@ -68,18 +68,3 @@ iframe {
   border: none;
 }
 
-/* Wider layout */
-.wrapper {
-  width: 1200px;
-  max-width: 92%;
-  padding: 2rem 2.5rem;
-}
-
-/* Mobile: shrink naturally */
-@media (max-width: 1250px) {
-  .wrapper {
-    width: auto;
-    max-width: 100%;
-    padding: 1.5rem 1.25rem;
-  }
-}
