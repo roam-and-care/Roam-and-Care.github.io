@@ -192,3 +192,11 @@ header nav a {
   line-height: 1.2;
   display: inline-block;
 }
+
+header > div {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
