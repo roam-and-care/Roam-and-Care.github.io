@@ -19,4 +19,4 @@ title: Roam and Care
 Book with ROAM & CARE for professional nomadic caretakers. You share your world, we care for it..</p>
   </div>
 
-![Thomas and Fynd on the balcony](/assets/images/tomfyndbalcony.jpg)
+<img src="{{ '/assets/images/tomfyndbalcony.jpg' | relative_url }}" alt="Tom and Fynd on the balcony">
