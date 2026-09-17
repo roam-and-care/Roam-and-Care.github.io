@@ -26,9 +26,21 @@ a:hover {
   color: #1a5a4a;  /* Darker teal on hover */
 }
 
-/* Add a bit more padding to the main container */
+/* Centered column - roughly the middle third of the screen */
 .wrapper {
+  width: 680px;
+  max-width: 92%;
+  margin: 0 auto;
   padding: 2rem 2.5rem;
+}
+
+/* On smaller screens, use more of the available width */
+@media (max-width: 760px) {
+  .wrapper {
+    width: auto;
+    max-width: 100%;
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 /* Change the navigation bar background (if you have one) */
