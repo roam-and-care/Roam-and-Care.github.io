@@ -9,7 +9,7 @@ permalink: /contact/
 
 <div class="button-group">
 
-  <a href="thomas.carollo44@gmail.com" class="btn">
+  <a href="mailto:thomas.carollo44@gmail.com" class="btn">
     ✉️ Email Us
   </a>
 
