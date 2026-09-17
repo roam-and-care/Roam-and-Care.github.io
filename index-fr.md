@@ -3,7 +3,7 @@ layout: default
 title: "Roam and Care"
 description: "Garde de maison, ferme et animaux."
 lang: fr
-permalink: /fr/
+permalink: /
 --- 
 
 # Roam & Care
