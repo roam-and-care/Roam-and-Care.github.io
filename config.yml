@@ -9,3 +9,10 @@ plugins:
       path: ""
     values:
       image: /assets/images/your-social-image.jpg   # Optional: a nice image for social sharing
+
+# Polyglot settings
+languages: ["en", "fr", "es", "pt", "it"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "sitemap", "CNAME"]
+parallel_localization: true
+url: "https://your-username.github.io" # Replace with your actual URL
