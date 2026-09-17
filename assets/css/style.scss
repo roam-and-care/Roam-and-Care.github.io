@@ -114,3 +114,45 @@ section p {
   margin-right: auto;
   max-width: 700px;
 }
+
+/* Button group container */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+/* Base button style */
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2.5rem;
+  background-color: #1a4a3a;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: background-color 0.2s, transform 0.1s;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #2a7a6a;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Mobile: stack buttons vertically */
+@media (max-width: 500px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
