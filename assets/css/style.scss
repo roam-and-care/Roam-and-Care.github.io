@@ -67,16 +67,6 @@ iframe {
   border: none;
 }
 
-/* Override the Minimal theme's sidebar layout */
-header {
-  position: static !important;
-  float: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 1.5rem 1rem 1.5rem !important;
-  border: none !important;
-}
-
 section {
   float: none !important;
   width: 100% !important;
@@ -188,18 +178,6 @@ header h1 {
   line-height: 1.2;
 }
 
-header nav a {
-  line-height: 1.2;
-  display: inline-block;
-}
-
-header > div {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 
 /* Header layout - replaces inline styles */
 .site-header {
