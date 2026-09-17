@@ -156,3 +156,31 @@ section p {
     max-width: 320px;
   }
 }
+
+/* Image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* 2 columns on desktop */
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid-item {
+  aspect-ratio: 4 / 3;                     /* Every cell is a 4:3 rectangle */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;                       /* Crops to fill, no distortion */
+  display: block;
+}
+
+/* Tablets and phones: 1 column */
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
