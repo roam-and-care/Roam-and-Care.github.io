@@ -8,7 +8,7 @@ permalink: /petsitting/
 
 <div class="video-full">
   <div class="video-container">
-    <iframe src="[https://www.youtube.com/embed/SYiOsec4P6g" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/SYiOsec4P6g" frameborder="0" allowfullscreen></iframe>
   </div>
   
 Photo updates. See your pets happy, every visit.
