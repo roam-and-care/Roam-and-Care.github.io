@@ -19,7 +19,7 @@ Book with ROAM & CARE for professional nomadic caretakers. You share your world,
   </div>
 
 
-<h3>See what our satisfied customers have to say about us!</h3>
+<h2>See what our satisfied customers have to say about us!</h2>
 
 <div class="video-full">
   <div class="video-container">
