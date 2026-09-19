@@ -31,6 +31,22 @@
             <a href="{{ "/farriery/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Farriery</a>
             <a href="{{ "/contact/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
           </nav>
+          <nav class="language-switcher">
+            {% assign current_lang = site.active_lang %}
+            {% assign path = page.url %}
+            {% if current_lang != site.default_lang %}
+              {% assign path = path | remove_first: current_lang %}
+            {% endif %}
+            {% for lang in site.languages %}
+              {% if lang == current_lang %}
+                <span class="lang-active">{{ lang | upcase }}</span>
+              {% elsif lang == site.default_lang %}
+                <a href="{{ path }}">{{ lang | upcase }}</a>
+              {% else %}
+                <a href="/{{ lang }}{{ path }}">{{ lang | upcase }}</a>
+              {% endif %}
+            {% endfor %}
+          </nav>
         </div>
       </header>
       <section>
