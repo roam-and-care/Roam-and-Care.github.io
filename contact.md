@@ -23,3 +23,4 @@ permalink: /contact/
 </div>
 
 ![Collage](/assets/images/roamandcarecollage.jpg)
+ 
