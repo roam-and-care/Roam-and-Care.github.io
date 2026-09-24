@@ -25,13 +25,43 @@
             </h1>
           </div>
           <nav>
-            <a href="{{ "/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Home</a>
-            <a href="{{ "/housesitting/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">House & Petsitting</a>
-            <a href="{{ "/petsitting/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Dogwalking</a>
-            <a href="{{ "/farriery/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Farriery</a>
-            <a href="{{ "/testimonials/" | relative_url }}">Testimonials</a>
-            <a href="{{ "/contact/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
-          </nav>
+{% if site.active_lang == "fr" %}
+<a href="{{ "/" | relative_url }}">Accueil</a>
+<a href="{{ "/housesitting/" | relative_url }}">Garde de maison et d'animaux</a>
+<a href="{{ "/petsitting/" | relative_url }}">Promenade de chiens</a>
+<a href="{{ "/farriery/" | relative_url }}">Maréchalerie</a>
+<a href="{{ "/testimonials/" | relative_url }}">Témoignages</a>
+<a href="{{ "/contact/" | relative_url }}">Contact</a>
+{% elsif site.active_lang == "es" %}
+<a href="{{ "/" | relative_url }}">Inicio</a>
+<a href="{{ "/housesitting/" | relative_url }}">Cuidado de casa y mascotas</a>
+<a href="{{ "/petsitting/" | relative_url }}">Paseo de perros</a>
+<a href="{{ "/farriery/" | relative_url }}">Herrería</a>
+<a href="{{ "/testimonials/" | relative_url }}">Testimonios</a>
+<a href="{{ "/contact/" | relative_url }}">Contacto</a>
+{% elsif site.active_lang == "pt" %}
+<a href="{{ "/" | relative_url }}">Início</a>
+<a href="{{ "/housesitting/" | relative_url }}">Cuidado de casa e animais</a>
+<a href="{{ "/petsitting/" | relative_url }}">Passeio de cães</a>
+<a href="{{ "/farriery/" | relative_url }}">Casqueamento</a>
+<a href="{{ "/testimonials/" | relative_url }}">Depoimentos</a>
+<a href="{{ "/contact/" | relative_url }}">Contato</a>
+{% elsif site.active_lang == "it" %}
+<a href="{{ "/" | relative_url }}">Home</a>
+<a href="{{ "/housesitting/" | relative_url }}">Casa e animali</a>
+<a href="{{ "/petsitting/" | relative_url }}">Passeggiate con i cani</a>
+<a href="{{ "/farriery/" | relative_url }}">Mascalcia</a>
+<a href="{{ "/testimonials/" | relative_url }}">Testimonianze</a>
+<a href="{{ "/contact/" | relative_url }}">Contatti</a>
+{% else %}
+<a href="{{ "/" | relative_url }}">Home</a>
+<a href="{{ "/housesitting/" | relative_url }}">House & Petsitting</a>
+<a href="{{ "/petsitting/" | relative_url }}">Dogwalking</a>
+<a href="{{ "/farriery/" | relative_url }}">Farriery</a>
+<a href="{{ "/testimonials/" | relative_url }}">Testimonials</a>
+<a href="{{ "/contact/" | relative_url }}">Contact</a>
+{% endif %}
+</nav>
           <nav class="language-switcher">
 {% assign current_lang = site.active_lang %}
 {% if current_lang == nil or current_lang == "" %}
