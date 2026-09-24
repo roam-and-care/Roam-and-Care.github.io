@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {% seo canonical=false %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="site-header">
-          <div>
-            <h1 style="margin: 0; font-size: 1.8rem;">
-              <a href="{{ "/" | relative_url }}" style="text-decoration: none; color: #333;">
-                {{ site.title | default: site.github.repository_name }}
-              </a>
-            </h1>
-          </div>
-          <nav>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+<link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}">
+{% include head-custom.html %}
+</head>
+<body>
+<div class="wrapper">
+<header>
+<div class="site-header">
+<div>
+<h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+</div>
+<nav>
 {% if site.active_lang == "fr" %}
 <a href="{{ "/" | relative_url }}">Accueil</a>
 <a href="{{ "/housesitting/" | relative_url }}">Garde de maison et d'animaux</a>
-<a href="{{ "/petsitting/" | relative_url }}">Promenades</a>
+<a href="{{ "/petsitting/" | relative_url }}">Promenade de chiens</a>
 <a href="{{ "/farriery/" | relative_url }}">Maréchalerie</a>
 <a href="{{ "/testimonials/" | relative_url }}">Témoignages</a>
 <a href="{{ "/contact/" | relative_url }}">Contact</a>
@@ -62,7 +54,7 @@
 <a href="{{ "/contact/" | relative_url }}">Contact</a>
 {% endif %}
 </nav>
-          <nav class="language-switcher">
+<nav class="language-switcher">
 {% assign current_lang = site.active_lang %}
 {% if current_lang == nil or current_lang == "" %}
 {% assign current_lang = site.default_lang %}
@@ -75,7 +67,18 @@
 <option value="it" {% if current_lang == "it" %}selected{% endif %}>🌐 Italiano</option>
 </select>
 </nav>
-          <script>
+</div>
+</header>
+<section>
+{{ content }}
+</section>
+<footer>
+{% if site.github.is_project_page %}
+<p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+{% endif %}
+</footer>
+</div>
+<script>
 (function() {
 var languages = {{ site.languages | jsonify }};
 var defaultLang = {{ site.default_lang | jsonify }};
@@ -108,3 +111,5 @@ window.location.href = newPath;
 });
 })();
 </script>
+</body>
+</html>
