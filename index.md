@@ -21,8 +21,4 @@ Book with ROAM & CARE for professional nomadic caretakers. You share your world,
 
 <h2>See what our satisfied customers have to say about us!</h2>
 
-<div class="video-full">
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/gytaEvgJI4c?si=XYaFuzB5QDe_uLpv" frameborder="0" allowfullscreen></iframe>
-  </div>
 
