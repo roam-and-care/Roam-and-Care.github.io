@@ -48,9 +48,9 @@
 {% if lang == current_lang %}
 <span class="lang-active">{{ lang | upcase }}</span>
 {% elsif lang == site.default_lang %}
-<a href="{{ base | absolute_url }}">{{ lang | upcase }}</a>
+<a href="{{ site.url }}{{ base }}">{{ lang | upcase }}</a>
 {% else %}
-<a href="{{ base | prepend: '/' | prepend: lang | absolute_url }}">{{ lang | upcase }}</a>
+<a href="{{ site.url }}/{{ lang }}{{ base }}">{{ lang | upcase }}</a>
 {% endif %}
 {% endfor %}
 </nav>
