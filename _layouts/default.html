@@ -67,71 +67,44 @@
 {% if current_lang == nil or current_lang == "" %}
 {% assign current_lang = site.default_lang %}
 {% endif %}
-{% for lang in site.languages %}
-{% if lang == current_lang %}
-<span class="lang-active">{{ lang | upcase }}</span>
-{% else %}
-<a href="#" data-lang="{{ lang }}">{{ lang | upcase }}</a>
-{% endif %}
-{% endfor %}
+<select id="lang-select" aria-label="Select language">
+<option value="en" {% if current_lang == "en" %}selected{% endif %}>🌐 English</option>
+<option value="fr" {% if current_lang == "fr" %}selected{% endif %}>🌐 Français</option>
+<option value="es" {% if current_lang == "es" %}selected{% endif %}>🌐 Español</option>
+<option value="pt" {% if current_lang == "pt" %}selected{% endif %}>🌐 Português</option>
+<option value="it" {% if current_lang == "it" %}selected{% endif %}>🌐 Italiano</option>
+</select>
 </nav>
           <script>
 (function() {
-  var languages = {{ site.languages | jsonify }};
-  var defaultLang = {{ site.default_lang | jsonify }};
-  var switcher = document.querySelector('.language-switcher');
-  if (!switcher) return;
-
-  switcher.addEventListener('click', function(e) {
-    var link = e.target.closest('a[data-lang]');
-    if (!link) return;
-    e.preventDefault();
-
-    var targetLang = link.getAttribute('data-lang');
-    var path = window.location.pathname;
-
-    // Strip the current language prefix if present
-    for (var i = 0; i < languages.length; i++) {
-      var lang = languages[i];
-      if (lang === defaultLang) continue;
-      var prefix = '/' + lang + '/';
-      if (path === '/' + lang || path === '/' + lang + '/') {
-        path = '/';
-        break;
-      }
-      if (path.indexOf(prefix) === 0) {
-        path = '/' + path.slice(prefix.length);
-        break;
-      }
-    }
-
-    // Build the target URL
-    var newPath;
-    if (targetLang === defaultLang) {
-      newPath = path;
-    } else {
-      newPath = '/' + targetLang + path;
-    }
-
-    // Collapse any double slashes (except after the protocol)
-    newPath = newPath.replace(/\/+/g, '/');
-
-    window.location.href = newPath;
-  });
+var languages = {{ site.languages | jsonify }};
+var defaultLang = {{ site.default_lang | jsonify }};
+var select = document.getElementById('lang-select');
+if (!select) return;
+select.addEventListener('change', function() {
+var targetLang = select.value;
+var path = window.location.pathname;
+for (var i = 0; i < languages.length; i++) {
+var lang = languages[i];
+if (lang === defaultLang) continue;
+var prefix = '/' + lang + '/';
+if (path === '/' + lang || path === '/' + lang + '/') {
+path = '/';
+break;
+}
+if (path.indexOf(prefix) === 0) {
+path = '/' + path.slice(prefix.length);
+break;
+}
+}
+var newPath;
+if (targetLang === defaultLang) {
+newPath = path;
+} else {
+newPath = '/' + targetLang + path;
+}
+newPath = newPath.replace(/\/+/g, '/');
+window.location.href = newPath;
+});
 })();
 </script>
-        </div>
-      </header>
-      <section>
-        {{ content }}
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
-</html>
