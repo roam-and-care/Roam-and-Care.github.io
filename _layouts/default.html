@@ -17,6 +17,10 @@
 <h1><a href="{{ "/" | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 </div>
 <nav>
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+☰ Menu
+</button>
+<div class="nav-links">
 {% if site.active_lang == "fr" %}
 <a href="{{ "/" | relative_url }}">Accueil</a>
 <a href="{{ "/housesitting/" | relative_url }}">Garde de maison et d'animaux</a>
@@ -53,6 +57,7 @@
 <a href="{{ "/testimonials/" | relative_url }}">Testimonials</a>
 <a href="{{ "/contact/" | relative_url }}">Contact</a>
 {% endif %}
+</div>
 </nav>
 <nav class="language-switcher">
 {% assign current_lang = site.active_lang %}
@@ -108,6 +113,18 @@ newPath = '/' + targetLang + path;
 }
 newPath = newPath.replace(/\/+/g, '/');
 window.location.href = newPath;
+});
+})();
+</script>
+<script>
+(function() {
+var toggle = document.querySelector('.nav-toggle');
+if (!toggle) return;
+toggle.addEventListener('click', function() {
+var links = document.querySelector('.nav-links');
+var expanded = this.getAttribute('aria-expanded') === 'true';
+this.setAttribute('aria-expanded', !expanded);
+links.classList.toggle('nav-open');
 });
 })();
 </script>
