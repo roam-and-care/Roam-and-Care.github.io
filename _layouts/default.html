@@ -37,6 +37,10 @@
 {% assign current_lang = site.default_lang %}
 {% endif %}
 {% assign base = page.url %}
+{% if current_lang != site.default_lang %}
+{% assign strip = "/" | append: current_lang %}
+{% assign base = base | remove_first: strip %}
+{% endif %}
 {% if base == "" or base == nil %}
 {% assign base = "/" %}
 {% endif %}
