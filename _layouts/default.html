@@ -32,32 +32,29 @@
             <a href="{{ "/contact/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
           </nav>
           <nav class="language-switcher">
-            {% assign current_lang = site.default_lang %}
-            {% assign page_url = page.url %}
-            {% for lang in site.languages %}
-              {% if lang != site.default_lang %}
-                {% assign check = "/" | append: lang | append: "/" %}
-                {% if page_url contains check %}
-                  {% assign current_lang = lang %}
-                {% endif %}
-              {% endif %}
-            {% endfor %}
-            {% assign base = page_url %}
-            {% if current_lang != site.default_lang %}
-              {% assign strip = "/" | append: current_lang %}
-              {% assign base = base | remove_first: strip %}
-            {% endif %}
-            {% if base == "" %}{% assign base = "/" %}{% endif %}
-            {% for lang in site.languages %}
-              {% if lang == current_lang %}
-                <span class="lang-active">{{ lang | upcase }}</span>
-              {% elsif lang == site.default_lang %}
-                <a href="{{ base }}">{{ lang | upcase }}</a>
-              {% else %}
-                <a href="/{{ lang }}{{ base }}">{{ lang | upcase }}</a>
-              {% endif %}
-            {% endfor %}
-          </nav>
+<!-- DEBUG: active_lang=[{{ site.active_lang }}] default_lang=[{{ site.default_lang }}] page.url=[{{ page.url }}] page.lang=[{{ page.lang }}] -->
+{% assign current_lang = site.active_lang %}
+{% if current_lang == nil or current_lang == "" %}
+{% assign current_lang = site.default_lang %}
+{% endif %}
+{% assign base = page.url %}
+{% if current_lang != site.default_lang %}
+{% assign strip = "/" | append: current_lang %}
+{% assign base = base | remove_first: strip %}
+{% endif %}
+{% if base == "" or base == nil %}
+{% assign base = "/" %}
+{% endif %}
+{% for lang in site.languages %}
+{% if lang == current_lang %}
+<span class="lang-active">{{ lang | upcase }}</span>
+{% elsif lang == site.default_lang %}
+<a href="{{ base }}">{{ lang | upcase }}</a>
+{% else %}
+<a href="/{{ lang }}{{ base }}">{{ lang | upcase }}</a>
+{% endif %}
+{% endfor %}
+</nav>
         </div>
       </header>
       <section>
