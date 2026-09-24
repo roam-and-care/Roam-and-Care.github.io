@@ -32,22 +32,29 @@
             <a href="{{ "/contact/" | relative_url }}" style="margin-left: 1.5rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
           </nav>
           <nav class="language-switcher">
-            {% assign current_lang = site.active_lang %}
-            {% assign path = page.url %}
+            {% assign current_lang = site.default_lang %}
+            {% assign page_url = page.url %}
+            {% for lang in site.languages %}
+              {% if lang != site.default_lang %}
+                {% assign check = "/" | append: lang | append: "/" %}
+                {% if page_url contains check %}
+                  {% assign current_lang = lang %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            {% assign base = page_url %}
             {% if current_lang != site.default_lang %}
-              {% capture prefix %}/{{ current_lang }}{% endcapture %}
-              {% assign path = path | remove_first: prefix %}
+              {% assign strip = "/" | append: current_lang %}
+              {% assign base = base | remove_first: strip %}
             {% endif %}
-            {% if path == "" or path == nil %}
-              {% assign path = "/" %}
-            {% endif %}
+            {% if base == "" %}{% assign base = "/" %}{% endif %}
             {% for lang in site.languages %}
               {% if lang == current_lang %}
                 <span class="lang-active">{{ lang | upcase }}</span>
               {% elsif lang == site.default_lang %}
-                <a href="{{ path }}">{{ lang | upcase }}</a>
+                <a href="{{ base }}">{{ lang | upcase }}</a>
               {% else %}
-                <a href="/{{ lang }}{{ path }}">{{ lang | upcase }}</a>
+                <a href="/{{ lang }}{{ base }}">{{ lang | upcase }}</a>
               {% endif %}
             {% endfor %}
           </nav>
