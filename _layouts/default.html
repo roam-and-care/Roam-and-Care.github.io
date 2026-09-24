@@ -36,24 +36,59 @@
 {% if current_lang == nil or current_lang == "" %}
 {% assign current_lang = site.default_lang %}
 {% endif %}
-{% assign base = page.url %}
-{% if current_lang != site.default_lang %}
-{% assign strip = "/" | append: current_lang %}
-{% assign base = base | remove_first: strip %}
-{% endif %}
-{% if base == "" or base == nil %}
-{% assign base = "/" %}
-{% endif %}
 {% for lang in site.languages %}
 {% if lang == current_lang %}
 <span class="lang-active">{{ lang | upcase }}</span>
-{% elsif lang == site.default_lang %}
-<a {% static_href %}href="{{ base }}"{% endstatic_href %}>{{ lang | upcase }}</a>
 {% else %}
-<a {% static_href %}href="/{{ lang }}{{ base }}"{% endstatic_href %}>{{ lang | upcase }}</a>
+<a href="#" data-lang="{{ lang }}">{{ lang | upcase }}</a>
 {% endif %}
 {% endfor %}
 </nav>
+          <script>
+(function() {
+  var languages = {{ site.languages | jsonify }};
+  var defaultLang = {{ site.default_lang | jsonify }};
+  var switcher = document.querySelector('.language-switcher');
+  if (!switcher) return;
+
+  switcher.addEventListener('click', function(e) {
+    var link = e.target.closest('a[data-lang]');
+    if (!link) return;
+    e.preventDefault();
+
+    var targetLang = link.getAttribute('data-lang');
+    var path = window.location.pathname;
+
+    // Strip the current language prefix if present
+    for (var i = 0; i < languages.length; i++) {
+      var lang = languages[i];
+      if (lang === defaultLang) continue;
+      var prefix = '/' + lang + '/';
+      if (path === '/' + lang || path === '/' + lang + '/') {
+        path = '/';
+        break;
+      }
+      if (path.indexOf(prefix) === 0) {
+        path = '/' + path.slice(prefix.length);
+        break;
+      }
+    }
+
+    // Build the target URL
+    var newPath;
+    if (targetLang === defaultLang) {
+      newPath = path;
+    } else {
+      newPath = '/' + targetLang + path;
+    }
+
+    // Collapse any double slashes (except after the protocol)
+    newPath = newPath.replace(/\/+/g, '/');
+
+    window.location.href = newPath;
+  });
+})();
+</script>
         </div>
       </header>
       <section>
