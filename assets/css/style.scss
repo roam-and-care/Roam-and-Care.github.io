@@ -227,37 +227,26 @@ section {
 .language-switcher {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+}
+
+.language-switcher select {
+  background-color: #f9f9f7;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.45rem 0.75rem;
   font-size: 0.9rem;
-}
-
-.language-switcher a,
-.language-switcher span {
-  padding: 0.25rem 0.5rem;
-  text-decoration: none;
-  color: #666;
-  border-radius: 4px;
+  color: #333;
+  font-family: inherit;
   font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.2s;
 }
 
-.language-switcher a:hover {
-  background-color: #f0f0ee;
-  color: #1a4a3a;
+.language-switcher select:hover {
+  border-color: #1a4a3a;
 }
 
-.language-switcher .lang-active {
-  color: #1a4a3a;
-  font-weight: 700;
-  border-bottom: 2px solid #1a4a3a;
-}
-
-/* Mobile: wrap the switcher to its own line */
-@media (max-width: 700px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .language-switcher {
-    margin-top: 0.5rem;
-  }
+.language-switcher select:focus {
+  outline: 2px solid #1a4a3a;
+  outline-offset: 2px;
 }
