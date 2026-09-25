@@ -1,6 +1,18 @@
 ---
 ---
 @import "minimal";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
 /* Change the background color of the whole page */
 body {
   background-color: #1ec7b9;  /* teal */
