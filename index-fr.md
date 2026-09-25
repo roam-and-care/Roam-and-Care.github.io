@@ -23,7 +23,7 @@ permalink: /
 
 <h2>Témoignages de nos clients</h2>
 
-<a href="/testimonials/" class="btn">En savoir plus</a>
+<a href="/testimonials/" class="btn">Plus d'avis!</a>
 
 <h2>Demander un devis</h2>
 
