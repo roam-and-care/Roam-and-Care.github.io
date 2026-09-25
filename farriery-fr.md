@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Maréchal-ferrant | Parage et ferrage des chevaux
+title: Maréchal-ferrant | Parage et ferrage des chevaux 
 description: Services de maréchalerie : parage, ferrage et entretien des pieds des chevaux, avec une approche adaptée aux besoins de chaque équidé.
 lang: fr
 permalink: /farriery/
