@@ -2,17 +2,32 @@
 ---
 @import "minimal";
 
+/* Global box-sizing - padding counted inside width */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-
+/* Prevent any element from causing horizontal scroll */
 html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
 
+/* All media respects its container */
+img, video, iframe, svg {
+  max-width: 100%;
+  height: auto;
+}
 
+/* No container exceeds its parent */
+.wrapper,
+.button-group,
+.image-grid,
+.video-text-row,
+.service-cards {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 /* Change the background color of the whole page */
 body {
   background-color: #1ec7b9;  /* teal */
