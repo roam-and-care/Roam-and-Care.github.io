@@ -1,13 +1,33 @@
 ---
 layout: default
-title: "Garde d'animaux et de maison | Roam & Care"
-description: "Garde d'animaux, garde à domicile et pet sitting pour vos voyages. Votre maison et vos animaux pris en charge partout en Europe."
+title: "Pet Sitter en France | Garde d'animaux et de maison"
+description: "Pet sitter pour la garde d'animaux et de maison en France. Garde à domicile, promenades de chiens et services adaptés à vos animaux."
 lang: fr
 permalink: /
 --- 
 
 
-<h1>Maison ♢ Compagnons ♢ Ferme ♢ Sabots</h1>
+<h1>Pet sitter et garde d'animaux en France | Maison ♢ Compagnons ♢ Ferme ♢ Sabots</h1>
+
+<h2>Des services de garde adaptés à vos animaux</h2>
+
+<h2>Garde d'animaux et pet sitting</h2>
+
+<h2>Garde de maison et d'animaux</h2>
+
+<h2>Promenade et bien-être des chiens</h2>
+
+<a href="/petsitting/" class="btn">En savoir plus</a>
+
+<h2>Pourquoi nous confier vos animaux ?</h2>
+
+<h2>Témoignages de nos clients</h2>
+
+<a href="/testimonials/" class="btn">En savoir plus</a>
+
+<h2>Demander un devis</h2>
+
+<a href="/contact/" class="btn">Contactez-nous</a>
 
 <h2>Nous voyageons pour vous, afin que vous puissiez travailler, vous détendre ou faire face à l'imprévu. Votre maison, vos animaux, votre terrain – toujours pris en charge.</h2>
 
