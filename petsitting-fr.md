@@ -3,7 +3,7 @@ layout: default
 title: Promenade de chien | Promeneur de chien en France
 description: Service de promenade de chien adapté à son rythme et à ses besoins. Promeneur de chien, balades régulières et sorties ponctuelles.
 lang: fr
-permalink: /
+permalink: /petsitting/
 ---
 
 <h1>Promenade de chien avec un promeneur de confiance</h1>
