@@ -13,7 +13,9 @@ permalink: /
 
 <h2>Garde d'animaux et pet sitting</h2>
 
-<h2>Garde de maison et d'animaux</h2>
+<h2 style="text-align: center; margin: 2rem 0;">
+<a href="/housesitting/" class="btn">Garde de maison et d'animaux</a>
+</h2>
 
 <h2>Promenade et bien-être des chiens</h2>
 
