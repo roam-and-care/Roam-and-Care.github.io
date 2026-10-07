@@ -2,6 +2,10 @@
 ---
 @import "minimal";
 
+html {
+  font-size: 18px;
+}
+
 /* Global box-sizing - padding counted inside width */
 *, *::before, *::after {
   box-sizing: border-box;
