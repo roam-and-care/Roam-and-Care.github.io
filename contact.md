@@ -21,7 +21,7 @@ LINKS HERE<br><br>
 </div>
 
 <div class="contact-option">
-<h3>CALL US ON WHATSAPP.</h3>
+<h3>CALL US ON WHATSAPP</h3>
 <a href="https://wa.me/46734790341" class="btn" target="_blank">📞 +46 73 47 90 341</a>
 </div>
 
