@@ -17,17 +17,17 @@ LINKS HERE<br>
 **Tell us about your needs & we'll get back to you within 24 hours.**
 
 <div class="contact-option">
-SEND US AN EMAIL <br>
+<h3>SEND US AN EMAIL</h3>
 <a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ thomas.carollo44@gmail.com</a>
 </div>
 
 <div class="contact-option">
-CALL US ON WHATSAPP. <br>
+<h3>CALL US ON WHATSAPP.</h3>
 <a href="https://wa.me/46734790341" class="btn" target="_blank">📞 +46 73 47 90 341</a>
 </div>
 
 <div class="contact-option">
-GET 10€ OFF ON YOUR FIRST ROVER BOOKING.<br>
+<h3>GET A 10€ REBATE ON YOUR FIRST ROVER BOOKING</h3>
 <a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">🐕 Rover Profile</a>
 </div>
 
