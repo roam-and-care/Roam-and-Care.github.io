@@ -18,6 +18,21 @@ Want to learn more about our services? Visit our dedicated pages:
 
 <h2>HOW TO CONTACT US</h2>
 
+<div class="contact-option">
+<p>Send us an email and we'll get back to you within a day.</p>
+<a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ Email</a>
+</div>
+
+<div class="contact-option">
+<p>Call us on WhatsApp.</p>
+<a href="https://wa.me/46734790341" class="btn" target="_blank">📞 +46 73 47 90 341</a>
+</div>
+
+<div class="contact-option">
+<p>Get 10€ off on your first Rover booking.</p>
+<a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">🐕 Rover Profile</a>
+</div>
+
 <div class="button-group">
 
   <a href="mailto:thomas.carollo44@gmail.com" class="btn">
