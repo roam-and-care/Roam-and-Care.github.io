@@ -6,57 +6,37 @@ html {
   font-size: 20px;
 }
 
-/* Global box-sizing - padding counted inside width */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* Prevent any element from causing horizontal scroll */
 html, body {
   overflow-x: hidden;
   max-width: 100%;
+  background-color: #1ec7b9;
 }
 
-/* All media respects its container */
 img, video, iframe, svg {
   max-width: 100%;
   height: auto;
 }
 
-/* No container exceeds its parent */
-.wrapper,
-.button-group,
-.image-grid,
-.video-text-row,
-.service-cards {
-  max-width: 100%;
-  box-sizing: border-box;
-}
-/* Change the background color of the whole page */
-body {
-  background-color: #1ec7b9;  /* teal */
-}
-
-/* Change the main text color */
 body, p, li {
-  color: #2d3a3a;  /* Dark teal */
+  color: #2d3a3a;
 }
 
-/* Change the color of headings */
 h1, h2, h3, h4 {
-  color: #1a4a3a;  /* Forest green */
+  color: #1a4a3a;
 }
 
-/* Change link colors */
 a {
-  color: #2a7a6a;  /* Muted teal */
+  color: #2a7a6a;
 }
 
 a:hover {
-  color: #1a5a4a;  /* Darker teal on hover */
+  color: #1a5a4a;
 }
 
-/* Centered column - roughly the middle third of the screen */
 .wrapper {
   width: 1100px;
   max-width: 92%;
@@ -70,7 +50,6 @@ a:hover {
   margin-right: auto;
 }
 
-/* On smaller screens, use more of the available width */
 @media (max-width: 760px) {
   .wrapper {
     width: auto;
@@ -79,29 +58,15 @@ a:hover {
   }
 }
 
-/* Change the navigation bar background (if you have one) */
 header {
+  position: static !important;
+  float: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
   background-color: #e8e3dd;
-  padding: 1rem 1.5rem 1rem 1.5rem !important;
   border-radius: 8px;
-}
-
-/* Video + text side by side */
-.video-text-row {
-  display: flex;
-  gap: 2rem;
-  align-items: center;  /* Vertically centers the text with the video */
-  margin: 2rem 0;
-}
-
-
-/* Make all iframes (YouTube videos) fill their container */
-iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  display: block;
-  border: none;
 }
 
 section {
@@ -109,6 +74,17 @@ section {
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -120,107 +96,6 @@ footer {
   border: none !important;
 }
 
-/* Center all content */
-section {
-  text-align: center;
-}
-
-/* Center images and videos inside their containers */
-img,
-iframe,
-.video-container,
-.video-col {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* Button group container */
-.button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem 0;
-  justify-content: center;
-}
-
-/* Base button style */
-.btn {
-  display: inline-block;
-  padding: 1.1rem 2.5rem;
-  background-color: #1a4a3a;
-  color: #ffffff !important;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: 600;
-  font-size: 1.25rem;
-  transition: background-color 0.2s, transform 0.1s;
-  border: none;
-  text-align: center;
-}
-
-.btn:hover {
-  background-color: #2a7a6a;
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-/* Mobile: stack buttons vertically */
-@media (max-width: 500px) {
-  .button-group {
-    flex-direction: column;
-    align-items: center;
-  }
-  .btn {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-
-/* Image grid */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* 2 columns on desktop */
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.grid-item {
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;                       
-  display: block;
-}
-
-/* Tablets and phones: 1 column */
-@media (max-width: 600px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Reset the theme's sidebar layout */
-header {
-  position: static !important;
-  float: none !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-section {
-  float: none !important;
-  width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Header content layout and spacing */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -253,7 +128,6 @@ section {
   display: inline-block;
 }
 
-/* Language switcher */
 .language-switcher {
   display: flex;
   align-items: center;
@@ -269,18 +143,8 @@ section {
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
-  transition: border-color 0.2s;
 }
 
-.language-switcher select:hover {
-  border-color: #1a4a3a;
-}
-
-.language-switcher select:focus {
-  outline: 2px solid #1a4a3a;
-  outline-offset: 2px;
-}
-/* Hamburger button - hidden on desktop */
 .nav-toggle {
   display: none;
   background: none;
@@ -293,11 +157,6 @@ section {
   color: #333;
 }
 
-.nav-toggle:hover {
-  border-color: #1a4a3a;
-}
-
-/* Desktop: links display normally */
 .nav-links {
   display: flex;
   align-items: center;
@@ -305,7 +164,6 @@ section {
   flex-wrap: wrap;
 }
 
-/* Mobile: hamburger appears, links collapse */
 @media (max-width: 900px) {
   .nav-toggle {
     display: inline-block;
@@ -329,8 +187,70 @@ section {
     padding: 0.5rem 0;
   }
 }
- 
-/* Stacked button + description blocks */
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2.5rem;
+  background-color: #1a4a3a;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: background-color 0.2s, transform 0.1s;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #2a7a6a;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-option {
   margin: 2.5rem 0;
   text-align: center;
