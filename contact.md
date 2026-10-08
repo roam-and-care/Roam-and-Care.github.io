@@ -11,11 +11,10 @@ permalink: /contact/
 
 <h3>We *roam* throughout Europe to *care* for your pets and your home.</h3>
 Want to learn more about our services? Visit our dedicated pages:
-LINKS HERE<br>
+LINKS HERE<br><br>
 <h2>REQUEST YOUR FREE QUOTE TODAY.</h2>
 
 **Tell us about your needs & we'll get back to you within 24 hours.**
-
 <div class="contact-option">
 <h3>SEND US AN EMAIL</h3>
 <a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ thomas.carollo44@gmail.com</a>
@@ -33,7 +32,7 @@ LINKS HERE<br>
 
 // Add Facebook button and shrink all buttons
 
-
+<br>
 <h2>MEET OUR TEAM</h2>
 
 <h3>Independent sitters specializing in overnight and full-time in-home care with over 20 years of experience & professionally trained</h3>
