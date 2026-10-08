@@ -21,15 +21,15 @@ Want to learn more about our services? Visit our dedicated pages:
 <div class="button-group">
 
   <a href="mailto:thomas.carollo44@gmail.com" class="btn">
-    ✉️ Email Us
+    ✉️ thomas.carollo44@gmail.com
   </a>
 
   <a href="https://wa.me/46734790341" class="btn" target="_blank">
-    💬 WhatsApp
+    💬 +46 73 47 90 341
   </a>
 
   <a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">
-    🐕 Rover
+    🐕 Rover Profile
   </a>
 </div>
 
