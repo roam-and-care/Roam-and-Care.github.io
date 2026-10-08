@@ -5,7 +5,7 @@ title: Roam and Care
 
 <h1>TRUSTED PET SITTER AND HOUSE SITTER MOBILE IN EUROPE</h1>
 
-Certified ACACED. Full-time independent sitters specializing in overnight and full-time in-home care for pets and homes in France, Italy, Spain, Sweden & more.<br>
+*Certified ACACED. Full-time independent sitters specializing in overnight and full-time in-home care for pets and homes in France, Italy, Spain, Sweden & more.*<br>
 
 <h2>OUR SERVICES</h2>
 We roam throughout Europe to care for your pets & homes.<br>
@@ -39,12 +39,12 @@ We **structure our day around your needs**: morning walks and playtime for your 
 We send **daily photo and video updates**, so you can work, relax, or travel knowing your pets are safe, your home is secure, and everything is running smoothly. In case of an unexpected event, we follow an **emergency protocol**: we contact your vet immediately, manage the situation calmly, and notify you right away.<br>
 
 <h2>WHY TRUST US</h2>
-An expertise built on specialized training, over 20 years of experience, and a deep understanding of animals and properties.<br>
-ACACED certified. Trained in the needs of dogs, cats, rodents, birds, reptiles, and fish.<br>
-Pet sitters on Rover since 2023 with complete identity verification and Star Sitter status.<br>
-Thomas professional farrier, raised on a farm, multilingual, expert in dog walking, large animals, livestock, and farm management.<br>
-Ariane specialist in senior, anxious, and high-care pets. She has a true talent for gardening and home care.<br>
-References available on request.<br>
+*An expertise built on specialized training, over 20 years of experience, and a deep understanding of animals and properties.*<br>
+**ACACED certified**. Trained in the needs of dogs, cats, rodents, birds, reptiles, and fish.<br>
+**Pet sitters on Rover since 2023** with complete identity verification and **Star Sitter status**.<br>
+**Thomas** professional farrier, raised on a farm, multilingual, expert in dog walking, large animals, livestock, and farm management.<br>
+**Ariane** specialist in senior, anxious, and high-care pets. She has a true talent for gardening and home care.<br>
+**References available** on request.<br>
 <br>
 Learn more about us in the Contact section<br>
 **Don't just take our word for it**<br>
