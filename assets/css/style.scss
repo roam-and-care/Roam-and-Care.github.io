@@ -330,3 +330,17 @@ section {
   }
 }
  
+/* Stacked button + description blocks */
+.contact-option {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.contact-option p {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
