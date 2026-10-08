@@ -5,48 +5,34 @@ description: Contact us
 permalink: /contact/
 ---
 
-<h1>Contact</h1>
+<h1>CONTACT</h1>
 
 <h2>READY TO LEAVE WITH PEACE OF MIND?</h2>
 
-<h3>We roam throughout Europe to care for your pets and your home.</h3>
-
+<h3>We *roam* throughout Europe to *care* for your pets and your home.</h3>
+Want to learn more about our services? Visit our dedicated pages:
+LINKS HERE<br>
 <h2>REQUEST YOUR FREE QUOTE TODAY.</h2>
 
 **Tell us about your needs & we'll get back to you within 24 hours.**
-Want to learn more about our services? Visit our dedicated pages: <br>
-
-<h2>HOW TO CONTACT US</h2>
 
 <div class="contact-option">
-Send us an email and we'll get back to you within a day.
-<a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ Email</a>
+SEND US AN EMAIL <br>
+<a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ thomas.carollo44@gmail.com</a>
 </div>
 
 <div class="contact-option">
-<p>Call us on WhatsApp.</p>
+CALL US ON WHATSAPP. <br>
 <a href="https://wa.me/46734790341" class="btn" target="_blank">📞 +46 73 47 90 341</a>
 </div>
 
 <div class="contact-option">
-<p>Get 10€ off on your first Rover booking.</p>
+GET 10€ OFF ON YOUR FIRST ROVER BOOKING.<br>
 <a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">🐕 Rover Profile</a>
 </div>
 
-<div class="button-group">
+// Add Facebook button and shrink all buttons
 
-  <a href="mailto:thomas.carollo44@gmail.com" class="btn">
-    ✉️ thomas.carollo44@gmail.com
-  </a>
-
-  <a href="https://wa.me/46734790341" class="btn" target="_blank">
-    💬 +46 73 47 90 341
-  </a>
-
-  <a href="https://www.rover.com/members/thomas-yvon-i-c-i-care-for-your-beloved-pet/" class="btn" target="_blank">
-    🐕 Rover Profile
-  </a>
-</div>
 
 <h2>MEET OUR TEAM</h2>
 
@@ -60,7 +46,7 @@ Rover Petsitter since 2023 and happy to provide references on request.
 
 <h2>HAVE A QUESTION?</h2>
 
-Check out our FAQ page for answers about our services, rates, service areas, and more.
+Check out our FAQ page for answers about our services, rates, service areas, and more. //Link to FAQ Page
 For any other questions, don't hesitate to contact us directly. We respond within 24 hours.
 
 
