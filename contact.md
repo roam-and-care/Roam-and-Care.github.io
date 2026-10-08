@@ -9,17 +9,17 @@ permalink: /contact/
 
 <h2>READY TO LEAVE WITH PEACE OF MIND?</h2>
 
-We roam throughout Europe to care for your pets and your home.
+<h3>We roam throughout Europe to care for your pets and your home.</h3>
 
 <h2>REQUEST YOUR FREE QUOTE TODAY.</h2>
 
 **Tell us about your needs & we'll get back to you within 24 hours.**
-Want to learn more about our services? Visit our dedicated pages:
+Want to learn more about our services? Visit our dedicated pages: <br>
 
 <h2>HOW TO CONTACT US</h2>
 
 <div class="contact-option">
-<p>Send us an email and we'll get back to you within a day.</p>
+Send us an email and we'll get back to you within a day.
 <a href="mailto:thomas.carollo44@gmail.com" class="btn">✉️ Email</a>
 </div>
 
